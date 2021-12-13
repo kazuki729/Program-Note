@@ -1,0 +1,11 @@
+#venv仮想環境を作成
+#プロジェクトフォルダ配下にvenv環境を構築するコマンド
+
+> cd [プロジェクトフォルダ]
+> python3 -m venv pythonapp-backend
+
+#仮想環境有効化
+> source pythonapp-frontend/bin/activate
+#無効化
+> deactivate
+
