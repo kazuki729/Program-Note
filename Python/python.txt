@@ -6,6 +6,7 @@
 
 #仮想環境有効化
 > source pythonapp-frontend/bin/activate
+> source pythonapp-backend/bin/activate
 #無効化
 > deactivate
 
@@ -27,3 +28,15 @@
 
 
 AWSCLIコマンドが動かない 12/14
+ごちゃごちゃやったら、動いた 12/15
+
+#AWSデプロイコマンド
+> chalice deploy --stage dev
+#デリートコマンド
+> chalice delete --stage dev
+
+#chalice localコマンド
+> chalice local --stage dev
+
+# dynamoDb起動
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar - shareDb -port 8001
